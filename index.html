@@ -7,16 +7,21 @@
     <title>template Website_Portoflio</title>
     <!-- Custom File FontAwesome -->
     <link rel="stylesheet" href="style/all.min.css">
+    <!-- Aos Animation Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom File Bootstrap Css -->
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <!-- Custom File FontAwesome -->
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light py-4">
         <div class="container">
-          <a class="navbar-brand text-uppercase fw-bold" href="#home">Portoflio</a>
+          <a class="navbar-brand text-uppercase fw-bold" href="#home">
+            Mustafa R
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
           aria-expanded="false" aria-label="Toggle navigation">
@@ -27,30 +32,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link mx-3 active text-uppercase fw-bold" aria-current="page" href="#home">Home</a>
+                <a class="nav-link mx-2 active text-uppercase fw-bold" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-3 text-uppercase fw-bold" href="#about">About</a>
+                <a class="nav-link mx-2 text-uppercase fw-bold" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-3 text-uppercase fw-bold" href="#works">Works</a>
+                <a class="nav-link mx-2 text-uppercase fw-bold" href="#works">Works</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-3 text-uppercase fw-bold" href="#skills">Skills</a>
+                <a class="nav-link mx-2 text-uppercase fw-bold" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-3 text-uppercase fw-bold" href="#services">Services</a>
+                <a class="nav-link mx-2 text-uppercase fw-bold" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-3 text-uppercase fw-bold" href="#contact">Contact</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                    <i class="fab cursor mx-2 fa-facebook"></i>
-                    <i class="fab cursor mx-2 fa-linkedin"></i>
-                    <i class="fab cursor mx-2 fa-dribbble"></i>
-                    <i class="fab cursor mx-2 fa-github"></i>
+                <a class="nav-link mx-2 text-uppercase fw-bold" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -79,13 +76,16 @@
     </section>
     <!-- End Home -->
     <!-- Start About -->
-    <section class="about py-5 bg-color" id="about">
-      <div class="talkall text-center">
+    <section class="about py-5 bg-color scrollspy-example" id="about">
+      <div class="talkall text-center" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
         <h2 class="text-uppercase fw-bold pb-5 pt-2">About Me</h2>
       </div>
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-4 offset-lg-1">
+          <div class="col-lg-4 offset-lg-1" data-aos="fade-up"
+          data-aos-duration="3000">
             <div class="image">
               <a href="#home">
                 <div class="overflow">
@@ -94,7 +94,8 @@
               </a>
             </div>
           </div>
-          <div class="col-lg-7">
+          <div class="col-lg-7" data-aos="fade-up"
+          data-aos-duration="3000">
             <div class="content pt-lg-3 pb-md-3">
               <p class="fw-bold text-uppercase position-relative">I'm Mostafa Ramadan,</p> 
               <span> FrontEnd Developer / UI Developer</span>
@@ -130,6 +131,7 @@
         </div>
       </div>
     </section>
+    <div id="particles-js"></div>
     <!-- End About -->
     <!-- Start Clinet -->
     <section class="py-2 clinet">
@@ -167,68 +169,69 @@
     <!-- End Clinet -->
     <!-- Start works -->
     <section class="works py-5 bg-color" id="works">
-      <div class="talkall text-center">
+      <div class="talkall text-center" data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="1500">
         <h2 class="text-uppercase fw-bold pb-5 pt-2">My works</h2>
       </div>
       <div class="container">
         <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="work text-center py-5">
               <h3 class="text-capitalize fw-bold mb-4">Curds_Projects</h3>
               <p class="mb-4 fw-bold">Using HTML - Scss - js - Bootstrap - localStorage</p>
               <a href="https://mustafa2036.github.io/CURDS/" target="_blank" class="btn text-capitalize py-2 px-4 fw-bold">More Design</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="work text-center py-5">
               <h3 class="text-capitalize fw-bold mb-4">Movies_Api</h3>
               <p class="mb-4 fw-bold">Using React - Bootstrap - API - UseHooks</p>
               <a href="#" target="_blank" class="btn text-capitalize py-2 px-4 fw-bold">More Design</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="work text-center py-5">
               <h3 class="text-capitalize fw-bold mb-4">Recipe_Api</h3>
               <p class="mb-4 fw-bold">Using React - Bootstrap - API - UseHooks</p>
               <a href="#" target="_blank" class="btn text-capitalize py-2 px-4 fw-bold">More Design</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="work text-center py-5">
               <h3 class="text-capitalize fw-bold mb-4">Zay</h3>
               <p class="mb-4 fw-bold">Using React - Scss - Bootstrap</p>
               <a href="https://mustafa2036.github.io/ZAY/" target="_blank" class="btn text-capitalize py-2 px-4 fw-bold">More Design</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="work text-center py-5">
               <h3 class="text-capitalize fw-bold mb-4">BookMarker</h3>
               <p class="mb-4 fw-bold">Using HTML - Css - js - LocalStorage</p>
               <a href="https://mustafa2036.github.io/BookMarker/" target="_blank" class="btn text-capitalize py-2 px-4 fw-bold">More Design</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="work text-center py-5">
               <h3 class="text-capitalize fw-bold mb-4">Weather_App</h3>
               <p class="mb-4 fw-bold">Using HTML - Scss - js</p>
               <a href="https://mustafa2036.github.io/Weather_app_1/" target="_blank" class="btn text-capitalize py-2 px-4 fw-bold">More Design</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="work text-center py-5">
               <h3 class="text-capitalize fw-bold mb-4">Shop_Api</h3>
               <p class="mb-4 fw-bold">Using React - Scss - BootStrap - UseHooks</p>
               <a href="https://mustafa2036.github.io/shopAPi_2/" target="_blank" class="btn text-capitalize py-2 px-4 fw-bold">More Design</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="work text-center py-5">
               <h3 class="text-capitalize fw-bold mb-4">Moviesdb_APi</h3>
               <p class="mb-4 fw-bold">Using HTML - Css - BootStrap - js - Fetch - Api</p>
               <a href="https://mustafa2036.github.io/API-Exam/" target="_blank" class="btn text-capitalize py-2 px-4 fw-bold">More Design</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="work text-center py-5">
               <h3 class="text-capitalize fw-bold mb-4">Eatery_Cafe</h3>
               <p class="mb-4 fw-bold">Using HTML - Scss - BootStrap - js</p>
@@ -241,7 +244,8 @@
     <!-- End works -->
     <!-- Start Skills -->
     <section class="skills py-5 bg-color" id="skills">
-      <div class="talkall text-center">
+      <div class="talkall text-center" data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="1500">
         <h2 class="text-uppercase fw-bold pb-5 pt-2">My Skills</h2>
       </div>
       <div class="container">
@@ -332,12 +336,13 @@
     <!-- End Skills -->
     <!-- Start Services -->
     <section class="services py-5 bg-color" id="services">
-      <div class="talkall text-center">
+      <div class="talkall text-center" data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="1500">
         <h2 class="text-uppercase fw-bold pb-5 pt-2">my Services</h2>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="servies-box text-center py-4">
               <div class="serives-icons py-2">
                   <span> <i class="fa-solid fa-pen"></i> </span>
@@ -352,7 +357,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="servies-box text-center py-4">
               <div class="serives-icons py-2">
                 <span> <i class="fa-solid fa-desktop"></i> </span>
@@ -367,7 +372,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="servies-box text-center py-4">
               <div class="serives-icons py-2">
                   <span> <i class="fa-solid fa-clipboard-check"></i> </span>
@@ -388,45 +393,46 @@
     <!-- End Services -->
     <!-- Start Contact -->
     <section class="contact bg-color py-5" id="contact">
-      <div class="talkall text-center">
+      <div class="talkall text-center" data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="1500">
         <h2 class="text-uppercase fw-bold pb-5 pt-2">contact</h2>
       </div>
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="box-contact text-center">
               <i class="fas fa-location-dot mb-4"></i>
               <h3 class="text-uppercase fw-bold">Address</h3>
               <span>Egypt - cairo - giza</span>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="box-contact text-center">
               <i class="fab fa-dribbble mb-4"></i>
               <h3 class="text-uppercase fw-bold">Email</h3>
               <span>mostafa.missy.58@gmail.com</span>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="3000">
             <div class="box-contact text-center">
               <i class="fas fa-phone mb-4"></i>
               <h3 class="text-uppercase fw-bold">Phone Number</h3>
               <span>01124780896</span>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-duration="3000">
             <input type="text" class="form-control  py-3" placeholder="Name':....">
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-duration="3000">
             <input type="email" class="form-control  py-3" placeholder="Email':....">
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-duration="3000">
             <input type="email" class="form-control  py-3" placeholder="Email':....">
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-duration="3000">
             <textarea class="form-control  py-3" placeholder="comment':"></textarea>
           </div>
-          <div class="col-lg-12 d-flex justify-content-end">
+          <div class="col-lg-12 d-flex justify-content-end" data-aos="fade-up" data-aos-duration="3000">
             <button class="btn btn-success fw-bold text-uppercase px-5 py-3">Send Message</button>
           </div>
         </div>
@@ -446,17 +452,17 @@
           <div class="col-lg-4">
             <ul class="text-lg-center">
               <li>
-                <a href="https://www.facebook.com/anamostafa.misse">
+                <a href="https://www.facebook.com/anamostafa.misse" target="_blank">
                   <i class="fab fa-facebook px-2"></i>
                 </a>
-                <a href="https://github.com/mustafa2036">
+                <a href="https://github.com/mustafa2036" target="_blank">
                   <i class="fab fa-github px-2"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/mostafa-misse-a35199225/">
+                <a href="https://www.linkedin.com/in/mostafa-misse-a35199225/" target="_blank">
                   <i class="fab fa-linkedin px-2"></i>
                 </a>
-                <a href="#home">
-                  <i class="fab fa-dribbble px-2"></i>
+                <a href="https://www.tiktok.com/@codelabb" target="_blank">
+                  <i class="fab fa-tiktok px-2"></i>
                 </a>
               </li>
             </ul>
@@ -485,7 +491,11 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom File script -->
     <script src="js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

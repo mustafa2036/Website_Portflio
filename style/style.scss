@@ -89,6 +89,7 @@ a{
         }
         .nav-link{
             color: $white-color;
+            font-size: .9rem;
             &:hover{
                 color: $bin-color;
             }
@@ -109,15 +110,15 @@ a{
         background-color: $black-color;
         .box-content{
             p{
-                font-size: 2rem;
+                font-size: 1.7rem;
                 font-family: $font-1;
             }
             h2{
-                font-size: 2.9rem;
+                font-size: 2.5rem;
                 font-family: $font-1;
             }
             h3{
-                font-size: 1.7rem;
+                font-size: 1.4rem;
                 font-family: $font-1;
             }
             .icons{
@@ -126,7 +127,7 @@ a{
                 border-radius: 45%;
                 border: 3px solid $white-color;
                 position: absolute;
-                bottom: -60%;
+                bottom: -40%;
                 left: 50%;
                 transform: translateX(-50%);
                 cursor: pointer;
@@ -657,6 +658,78 @@ footer{
     .talkall{
         h2{
             font-size: 1.8rem;
+        }
+    }
+    .contact{
+        .box-contact{
+            i{
+                font-size: 1.2rem;
+            }
+            h3{
+                font-size: 1.1rem;
+            }
+            span{
+                font-size: .9rem;
+            }
+        }
+    }
+    footer{
+        p{
+            font-size: .9rem;
+        }
+        ul{
+            a{
+                color: $white-color;
+                font-size: .9rem;
+            }
+        }
+    }
+}
+@media(max-width:450px){
+    .home{
+        .home-box{
+            .box-content{
+                p{
+                    font-size: 1rem;
+                }
+                h2{
+                    font-size: 1.4rem;
+                    text-align: center;
+                }
+                h3{
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
+            .btn{
+                font-size: 1rem;
+            }
+        }
+    }
+    .about{
+        .content{
+            p{
+                font-size: 1.3rem;
+                &::after{
+                    height: 0px;
+                }
+            }
+            span{
+                font-size: .8rem;
+            }
+        }
+        .about-content{
+            p{
+                font-size: .8rem;
+            }
+        }
+    }
+    .talkall{
+        h2{
+            font-size: 1.6rem;
+            &::after{
+                top: 40px;
+            }
         }
     }
     .contact{
