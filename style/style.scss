@@ -59,7 +59,7 @@ a{
 .navbar{
     background-color: $black-color;
     &.active{
-        background-color: rgba(108, 106, 106, 0.8);
+        background-color: $black-color
     }
     z-index: 999999;
     .navbar-toggler{
@@ -697,7 +697,7 @@ footer{
                     text-align: center;
                 }
                 h3{
-                    font-size: 1rem;
+                    font-size: .8rem;
                     text-align: center;
                 }
             }

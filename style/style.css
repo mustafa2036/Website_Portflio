@@ -64,7 +64,7 @@ a {
 }
 
 .navbar.active {
-  background-color: rgba(108, 106, 106, 0.8);
+  background-color: #000;
 }
 
 .navbar .navbar-toggler {
@@ -692,7 +692,7 @@ footer ul a:hover {
     text-align: center;
   }
   .home .home-box .box-content h3 {
-    font-size: 1rem;
+    font-size: .8rem;
     text-align: center;
   }
   .home .home-box .btn {

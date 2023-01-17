@@ -8,7 +8,9 @@ let spans = document.querySelectorAll(".progress span");
 
 
 var typed = new Typed('.element', {
-    strings: [`I'm A FrontEnd Developer`,`I'm A UI Developer`],
+    strings: [`I'm A FrontEnd Developer`,`I'm A UI Developer`,
+    `Work on translating short videos`,`I work on short video montages`
+        ],
     typeSpeed: 100,
     backSpeed: 50,
     smartBackspace: true,
