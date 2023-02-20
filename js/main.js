@@ -5,11 +5,9 @@ let skillsSection = document.querySelector(".skills");
 let spans = document.querySelectorAll(".progress span");
 
 
-
-
-var typed = new Typed('.element', {
-    strings: [`I'm A FrontEnd Developer`,`I'm A UI Developer`,
-    `Work on translating short videos`,`I work on short video montages`
+let typed = new Typed('.element', {
+    strings: [`I'm A FrontEnd Developer`, `Work on translating short videos`,
+    `I work on short video montages`
         ],
     typeSpeed: 100,
     backSpeed: 50,
@@ -37,11 +35,9 @@ $(document).ready(function () {
     }
 });
 
-
 window.onscroll = () => {
 
     if(window.scrollY >= skillsSection.offsetTop - 200){
-        console.log('Change section is Done!');
         spans.forEach((span)=> {
             span.style.width = span.dataset.width;
         })
@@ -49,4 +45,3 @@ window.onscroll = () => {
     (scrollY > 100)?navbar.classList.add('active'): navbar.classList.remove('active');
     (scrollY > 100)?arrowUp.style.opacity = '1':arrowUp.style.opacity = '0';
 }
-

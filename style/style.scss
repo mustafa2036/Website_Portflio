@@ -99,7 +99,7 @@ a{
             font-size: 1rem;
             &:hover{
                 color: $bin-color;
-            }    
+            }
         }
     }
 }
@@ -338,6 +338,9 @@ footer{
 // Landing
 #loading{
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 0; bottom: 0;
     right: 0; left: 0;
     background-color: $bin-color;
@@ -346,8 +349,8 @@ footer{
     z-index: 999999;
     .sk-circle {
         margin: 100px auto;
-        width: 40px;
-        height: 40px;
+        width: 65px;
+        height: 65px;
         position: relative;
         .sk-child {
           width: 100%;
