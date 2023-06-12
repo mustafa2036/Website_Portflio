@@ -5,7 +5,7 @@ let skillsSection = document.querySelector(".skills");
 let spans = document.querySelectorAll(".progress span");
 
 
-let typed = new Typed('.element', {
+var typed = new Typed('#element', {
     strings: [`I'm A FrontEnd Developer`, `Work on translating short videos`,
     `I work on short video montages`
         ],
