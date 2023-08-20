@@ -6,10 +6,11 @@ let spans = document.querySelectorAll(".progress span");
 
 
 var typed = new Typed('#element', {
-    strings: [`I'm A FrontEnd Developer`, `Work on translating short videos`,
-    `I work on short video montages`
+    strings: [`I'm A FrontEnd Developer`, 
+    `UI Developer`,
+    `I'm A Video Creator`
         ],
-    typeSpeed: 100,
+    typeSpeed: 200,
     backSpeed: 50,
     smartBackspace: true,
     loop: true,
@@ -18,7 +19,7 @@ var typed = new Typed('#element', {
 
 $(document).ready(function () {
 
-    $("#loading .sk-circle").fadeOut(1000 , () => {
+    $("#loading .sk-cube-grid").fadeOut(6000 , () => {
         $("#loading").fadeOut(2000, () => {
             $("body").css("overflow-y" , 'auto')
         })
